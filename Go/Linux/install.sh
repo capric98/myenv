@@ -6,9 +6,9 @@ ARCH="amd64"
 wget https://dl.google.com/go/go${VERSION}.${OS}-${ARCH}.tar.gz
 tar -C /usr/local -xzf go${VERSION}.${OS}-${ARCH}.tar.gz
 
-mkdir /home/go
+mkdir $HOME/.go
 echo "export GOPROXY=https://mirrors.aliyun.com/goproxy/" >> ~/.profile
-echo "export GOPATH=/home/go" >> ~/.profile
+echo "export GOPATH=$HOME/.go" >> ~/.profile
 echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
 
 echo "Install some utils..."
