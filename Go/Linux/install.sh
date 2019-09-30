@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="1.13"
+VERSION="1.13.1"
 OS="linux"
 ARCH="amd64"
 
