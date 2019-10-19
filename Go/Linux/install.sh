@@ -8,7 +8,7 @@ wget https://dl.google.com/go/go${VERSION}.${OS}-${ARCH}.tar.gz
 if [[ -d /usr/local/go/ ]]; then
     # Update.
     echo "Golang exists:"
-    echo `go version`
+    echo `/usr/local/go/bin/go version`
     echo "Updating..."
     rm -rf /usr/local/go/
 else
@@ -20,7 +20,7 @@ fi
 
 tar -C /usr/local -xzf go${VERSION}.${OS}-${ARCH}.tar.gz
 echo "Golang installed:"
-echo `go version`
+echo `/usr/local/go/bin/go version`
 
 echo -e "If you are using Golang in Mainland China, you could enable goproxy by:"
 echo -e "echo \"export GOPROXY=https://mirrors.aliyun.com/goproxy/\" >> ~/.profile"
