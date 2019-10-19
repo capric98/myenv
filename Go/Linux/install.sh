@@ -22,6 +22,7 @@ tar -C /usr/local -xzf go${VERSION}.${OS}-${ARCH}.tar.gz
 echo "Golang installed:"
 echo `/usr/local/go/bin/go version`
 
+echo -e "\n======================================================================="
 echo -e "If you are using Golang in Mainland China, you could enable goproxy by:"
 echo -e "echo \"export GOPROXY=https://mirrors.aliyun.com/goproxy/\" >> ~/.profile"
 
