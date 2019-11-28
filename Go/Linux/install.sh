@@ -2,6 +2,9 @@
 VERSION="1.13.4"
 OS="linux"
 ARCH="amd64"
+if [[ $(uname --m) == "aarch64" ]]; then
+    ARCH="arm64"
+fi
 
 wget https://dl.google.com/go/go${VERSION}.${OS}-${ARCH}.tar.gz
 
