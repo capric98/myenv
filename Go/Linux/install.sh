@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="1.13.4"
+VERSION="1.13.5"
 OS="linux"
 ARCH="amd64"
 if [[ $(uname --m) == "aarch64" ]]; then
@@ -30,3 +30,4 @@ echo -e "If you are using Golang in Mainland China, you could enable goproxy by:
 echo -e "echo \"export GOPROXY=https://mirrors.aliyun.com/goproxy/\" >> ~/.profile"
 
 rm -rf go${VERSION}.${OS}-${ARCH}.tar.gz
+source ~/.profile
