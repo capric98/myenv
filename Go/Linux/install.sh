@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="1.13.5"
+VERSION="1.13.6"
 OS="linux"
 ARCH="amd64"
 if [[ $(uname --m) == "aarch64" ]]; then
