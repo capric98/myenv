@@ -33,6 +33,3 @@ jobs:
             git commit -am "Update golang version by actions."
         fi
         git push
-    - name: bench
-      run: |
-        curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
