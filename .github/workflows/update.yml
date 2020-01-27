@@ -22,7 +22,7 @@ jobs:
     - name: Install dependencies
       run: python -m pip install --upgrade requests
         
-    - name: check
+    - name: check-version
       #env:
       #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
@@ -33,3 +33,6 @@ jobs:
             git commit -am "Update golang version by actions."
         fi
         git push
+    - name: bench
+      run: |
+        curl -fsL https://ilemonra.in/LemonBenchIntl | bash -s fast
