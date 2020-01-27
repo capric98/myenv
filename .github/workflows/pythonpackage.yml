@@ -1,0 +1,32 @@
+name: Update Version
+
+on: 
+  schedule:
+    - cron: '0 0 * * *'
+
+jobs:
+  check_version:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: checkout actions
+    - uses: actions/checkout@v2
+
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    
+    - name: Install dependencies
+      run: python -m pip install --upgrade requests
+        
+    - name: check
+      #env:
+      #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        sed -i "4cVERSION=`python Go/Linux/version.py`" Go/Linux/install.sh
+        git config --global user.name 'capric98'
+        git config --global user.email 'capric98@users.noreply.github.com'
+        git diff-index --quiet HEAD -- || git commit -am "Update golang version by actions."
+        git push
