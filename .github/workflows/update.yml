@@ -27,7 +27,7 @@ jobs:
       #  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         sed -i "4cVERSION=`python Go/Linux/version.py`" Go/Linux/install.sh
-        git config --global user.name 'capric98'
+        git config --global user.name 'Actions'
         git config --global user.email 'capric98@users.noreply.github.com'
         if [ -n "$(git status --porcelain)" ]; then
             git commit -am "Update golang version by actions."
