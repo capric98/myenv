@@ -6,8 +6,6 @@
     "go.inferGopath": false,
     "go.lintTool": "golangci-lint",
     "git.ignoreMissingGitWarning": true,
-    "http.proxy": "http://127.0.0.1:10086",
-    "http.proxyStrictSSL": false,
     "C_Cpp.updateChannel": "Insiders",
     "terminal.integrated.rendererType": "dom",
 }
