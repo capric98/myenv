@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION=`python3 version.py`
+VERSION=`curl -fsSL https://raw.githubusercontent.com/capric98/myenv/master/Go/Linux/version.py | python3`
 OS="linux"
 ARCH="amd64"
 if [[ $(uname --m) == "aarch64" ]]; then
