@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="1.13.6"
+VERSION=`python3 version.py`
 OS="linux"
 ARCH="amd64"
 if [[ $(uname --m) == "aarch64" ]]; then
