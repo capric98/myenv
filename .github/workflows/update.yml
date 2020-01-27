@@ -29,5 +29,7 @@ jobs:
         sed -i "4cVERSION=`python Go/Linux/version.py`" Go/Linux/install.sh
         git config --global user.name 'capric98'
         git config --global user.email 'capric98@users.noreply.github.com'
-        git diff-index --quiet HEAD -- && git commit -am "Update golang version by actions."
+        if [ -n "$(git status --porcelain)" ]; then \
+            git commit -am "Update golang version by actions." \
+        fi
         git push
