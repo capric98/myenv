@@ -15,7 +15,6 @@ if [[ -d /usr/local/go/ ]]; then
     echo "Golang exists:"
     echo `/usr/local/go/bin/go version`
     echo "Updating..."
-    rm -rf /usr/local/go/
 else
     # First time.
     mkdir -p $HOME/.go
@@ -23,13 +22,20 @@ else
     echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
 fi
 
-tar -C /usr/local -xzf go${VERSION}.${OS}-${ARCH}.tar.gz
+if [[ $EUID -ne 0 ]]; then
+    sudo rm -rf /usr/local/go/
+    sudo tar -C /usr/local -xzf go${VERSION}.${OS}-${ARCH}.tar.gz
+else
+    rm -rf /usr/local/go/
+    tar -C /usr/local -xzf go${VERSION}.${OS}-${ARCH}.tar.gz
+fi
+
 echo "Golang installed:"
 echo `/usr/local/go/bin/go version`
 
 echo -e "\n======================================================================="
 echo -e "If you are using Golang in Mainland China, you could enable goproxy by:"
-echo -e "echo \"export GOPROXY=https://mirrors.aliyun.com/goproxy/\" >> ~/.profile"
+echo -e "echo \"export GOPROXY=https://mirrors.aliyun.com/goproxy/\" >> ~/.bashrc"
 
 rm -rf go${VERSION}.${OS}-${ARCH}.tar.gz
-source ~/.profile
+source ~/.bashrc
