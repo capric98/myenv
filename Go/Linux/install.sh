@@ -18,8 +18,8 @@ if [[ -d /usr/local/go/ ]]; then
 else
     # First time.
     mkdir -p $HOME/.go
-    echo "export GOPATH=$HOME/.go" >> ~/.bashrc
-    echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.bashrc
+    echo "export GOPATH=\$HOME/.go" >> ~/.bashrc
+    echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.bashrc
 fi
 
 if [[ $EUID -ne 0 ]]; then
