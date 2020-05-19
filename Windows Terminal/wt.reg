@@ -1,0 +1,88 @@
+Windows Registry Editor Version 5.00
+
+; Windows Terminal right click menu
+[HKEY_CLASSES_ROOT\Directory\shell\MenuWindowsTerminal]
+"MUIVerb"="Windows Terminal"
+"Icon"="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_0.11.1333.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe"
+"ExtendedSubCommandsKey"="Directory\\ContextMenus\\MenuWindowsTerminal"
+
+[HKEY_CLASSES_ROOT\Directory\background\shell\MenuWindowsTerminal]
+"MUIVerb"="Windows Terminal"
+"Icon"="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_0.11.1333.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe"
+"ExtendedSubCommandsKey"="Directory\\ContextMenus\\MenuWindowsTerminal"
+
+[HKEY_CLASSES_ROOT\Directory\LibraryFolder\shell\MenuWindowsTerminal]
+"MUIVerb"="Windows Terminal"
+"Icon"="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_0.11.1333.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe"
+"ExtendedSubCommandsKey"="Directory\\ContextMenus\\MenuWindowsTerminal"
+
+[HKEY_CLASSES_ROOT\Drive\shell\MenuWindowsTerminal]
+"MUIVerb"="Windows Terminal"
+"Icon"="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_0.11.1333.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe"
+"ExtendedSubCommandsKey"="Directory\\ContextMenus\\MenuWindowsTerminal"
+
+[HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\MenuWindowsTerminal]
+"MUIVerb"="Windows Terminal"
+"Icon"="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_0.11.1333.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe"
+"ExtendedSubCommandsKey"="Directory\\ContextMenus\\MenuWindowsTerminal"
+
+
+; Context Menus
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\MenuWindowsTerminal\shell\CMD]
+"ExtendedSubCommandsKey"="Directory\\ContextMenus\\CMD"
+"Icon"="imageres.dll,-5323"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\MenuWindowsTerminal\shell\Powershell]
+"ExtendedSubCommandsKey"="Directory\\ContextMenus\\Powershell"
+"Icon"="imageres.dll,-5372"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\MenuWindowsTerminal\shell\WSL]
+"ExtendedSubCommandsKey"="Directory\\ContextMenus\\WSL"
+"Icon"="C:\\Windows\\System32\\wsl.exe"
+
+
+; Commands
+; CMD
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\CMD\shell\open]
+"Icon"="imageres.dll,-5323"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\CMD\shell\open\command]
+@="C:\\Users\\HZH\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe -p \"cmd\" -d ."
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\CMD\shell\runas]
+"HasLUAShield"=""
+"MUIVerb"="Run as admin"
+"Icon"="imageres.dll,-5324"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\CMD\shell\runas\command]
+@="cmd.exe /s /c pushd \"%V\" & start wt -p \"cmd\" -d ."
+
+; Powershell
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\Powershell\shell\open]
+"Icon"="imageres.dll,-5372"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\Powershell\shell\open\command]
+@="C:\\Users\\HZH\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe -p \"Windows PowerShell\" -d ."
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\Powershell\shell\runas]
+"HasLUAShield"=""
+"MUIVerb"="Run as admin"
+"Icon"="imageres.dll,-5373"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\Powershell\shell\runas\command]
+@="cmd.exe /s /c pushd \"%V\" & start wt -p \"Windows PowerShell\" -d ."
+
+; WSL
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\WSL\shell\open]
+"Icon"="C:\\Windows\\System32\\wsl.exe"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\WSL\shell\open\command]
+@="C:\\Users\\HZH\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe -p \"Ubuntu-20.04\" -d ."
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\WSL\shell\runas]
+"HasLUAShield"=""
+"MUIVerb"="sudo"
+"Icon"="C:\\Windows\\System32\\wsl.exe"
+
+[HKEY_CLASSES_ROOT\Directory\ContextMenus\WSL\shell\runas\command]
+@="cmd.exe /s /c pushd \"%V\" & start wt -p \"Ubuntu-20.04\" -d ."

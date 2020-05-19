@@ -1,0 +1,29 @@
+{
+    "[cpp]": {},
+    "C_Cpp.default.browse.path": [],
+    "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": false,
+    "editor.fontSize": 16,
+    "editor.suggestSelection": "first",
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "git.ignoreMissingGitWarning": true,
+    "gitlens.codeLens.enabled": false,
+    "gitlens.currentLine.enabled": false,
+    "gitlens.hovers.currentLine.over": "line",
+    "go.useLanguageServer": true,
+    "indentRainbow.includedLanguages": [
+        "python"
+    ],
+    "python.linting.pylintArgs": [
+        "--extension-pkg-whitelist=PyQt5,numpy,cv2,matplotlib",
+        "--disable=C0114,C0115,C0116,E0401"
+    ],
+    "remote.SSH.remotePlatform": {
+        "158.51.84.117": "linux"
+    },
+    "terminal.integrated.rendererType": "dom",
+    "todo-tree.tree.showScanModeButton": false,
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.iconTheme": "material-icon-theme"
+}
