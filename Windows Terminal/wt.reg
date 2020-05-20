@@ -3,27 +3,27 @@ Windows Registry Editor Version 5.00
 ; Windows Terminal right click menu
 [HKEY_CLASSES_ROOT\Directory\shell\MenuWindowsTerminal]
 "MUIVerb"="Windows Terminal"
-"Icon"="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_0.11.1333.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe"
+"Icon"="C:\\Users\\Public\\Pictures\\terminal.ico"
 "ExtendedSubCommandsKey"="Directory\\ContextMenus\\MenuWindowsTerminal"
 
 [HKEY_CLASSES_ROOT\Directory\background\shell\MenuWindowsTerminal]
 "MUIVerb"="Windows Terminal"
-"Icon"="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_0.11.1333.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe"
+"Icon"="C:\\Users\\Public\\Pictures\\terminal.ico"
 "ExtendedSubCommandsKey"="Directory\\ContextMenus\\MenuWindowsTerminal"
 
 [HKEY_CLASSES_ROOT\Directory\LibraryFolder\shell\MenuWindowsTerminal]
 "MUIVerb"="Windows Terminal"
-"Icon"="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_0.11.1333.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe"
+"Icon"="C:\\Users\\Public\\Pictures\\terminal.ico"
 "ExtendedSubCommandsKey"="Directory\\ContextMenus\\MenuWindowsTerminal"
 
 [HKEY_CLASSES_ROOT\Drive\shell\MenuWindowsTerminal]
 "MUIVerb"="Windows Terminal"
-"Icon"="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_0.11.1333.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe"
+"Icon"="C:\\Users\\Public\\Pictures\\terminal.ico"
 "ExtendedSubCommandsKey"="Directory\\ContextMenus\\MenuWindowsTerminal"
 
 [HKEY_CLASSES_ROOT\LibraryFolder\Background\shell\MenuWindowsTerminal]
 "MUIVerb"="Windows Terminal"
-"Icon"="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_0.11.1333.0_x64__8wekyb3d8bbwe\\WindowsTerminal.exe"
+"Icon"="C:\\Users\\Public\\Pictures\\terminal.ico"
 "ExtendedSubCommandsKey"="Directory\\ContextMenus\\MenuWindowsTerminal"
 
 
