@@ -8,7 +8,7 @@ if [[ $(uname --m) == "aarch64" ]]; then
     ARCH="arm64"
 fi
 
-curl -fsSL https://golang.org/dl/go${VERSION}.${OS}-${ARCH}.tar.gz -o go${VERSION}.${OS}-${ARCH}.tar.gz
+curl -fsSL https://dl.google.com/go/go${VERSION}.${OS}-${ARCH}.tar.gz -o go${VERSION}.${OS}-${ARCH}.tar.gz
 
 if [[ -d /usr/local/go/ ]]; then
     # Update.
