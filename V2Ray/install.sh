@@ -1,4 +1,5 @@
 #!/bin/bash
+# Usage: curl -fsSL https://raw.githubusercontent.com/capric98/myenv/master/V2Ray/install.sh | bash -s ${User} ${Group}
 USER=$1
 GROUP=$2
 VERSION="4.28.1"
