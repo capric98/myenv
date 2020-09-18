@@ -2,7 +2,7 @@
 # Usage: curl -fsSL https://raw.githubusercontent.com/capric98/myenv/master/V2Ray/install.sh | bash -s ${User} ${Group}
 USER=$1
 GROUP=$2
-VERSION="4.28.1"
+VERSION="4.28.2"
 
 if [[ $EUID -ne 0 ]]; then
    echo "This script must be run as root!"
