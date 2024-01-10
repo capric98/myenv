@@ -1,7 +1,7 @@
 #!/bin/bash
 # Usage: curl -fsSL https://raw.githubusercontent.com/capric98/myenv/master/Go/Linux/install.sh | bash
 
-VERSION=1.21.5
+VERSION=1.21.6
 OS="linux"
 ARCH="amd64"
 if [[ $(uname --m) == "aarch64" ]]; then
